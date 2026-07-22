@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — Matt Hagen</title>
+  <meta name="description" content="Software projects, tools, and experiments by Matt Hagen." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html">matt<span>.</span>hagen</a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false">≡</button>
+      <ul class="nav__links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="work.html" aria-current="page">work</a></li>
+        <li><a href="writing.html">writing</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" style="padding-bottom:1rem">
+    <div class="wrap">
+      <p class="eyebrow">Software</p>
+      <h1>Selected <em>work</em>.</h1>
+      <p class="hero__lede">Projects and tools I've built. The cards below are scaffolding — replace the copy and links with your real repos and live demos.</p>
+    </div>
+  </header>
+
+  <section class="section" style="border-top:none">
+    <div class="wrap">
+      <div class="grid">
+        <article class="card reveal">
+          <span class="card__tag">Web · Static site</span>
+          <h3 class="card__title">This portfolio</h3>
+          <p class="card__desc">A multi-page static site — hand-written HTML/CSS/JS, no framework, dark techy theme with a typed-terminal hero.</p>
+          <div class="card__links">
+            <a href="https://github.com/Mattjhagen/mattjhagen-portfolio" target="_blank" rel="noopener">Source →</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <span class="card__tag">Project</span>
+          <h3 class="card__title">Project name</h3>
+          <p class="card__desc">One or two sentences on what it does and why it's interesting. Lead with the problem it solves.</p>
+          <div class="card__links">
+            <a href="#" target="_blank" rel="noopener">Live →</a>
+            <a href="#" target="_blank" rel="noopener">Source →</a>
+          </div>
+          <p class="card__note">// TODO: replace with a real project</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card__tag">Tool</span>
+          <h3 class="card__title">Project name</h3>
+          <p class="card__desc">What it does. What it's built with. What you learned or shipped.</p>
+          <div class="card__links">
+            <a href="#" target="_blank" rel="noopener">Source →</a>
+          </div>
+          <p class="card__note">// TODO: replace with a real project</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card__tag">Experiment</span>
+          <h3 class="card__title">Project name</h3>
+          <p class="card__desc">A smaller build, prototype, or experiment worth showing.</p>
+          <div class="card__links">
+            <a href="#" target="_blank" rel="noopener">Source →</a>
+          </div>
+          <p class="card__note">// TODO: replace with a real project</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>© <span id="yr"></span> Matt Hagen</span>
+      <span>github.com/Mattjhagen</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

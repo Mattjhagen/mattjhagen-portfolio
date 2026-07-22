@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writing — Matt Hagen</title>
+  <meta name="description" content="Fiction by Matt Hagen, including the novel The Gentle Conquest." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html">matt<span>.</span>hagen</a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false">≡</button>
+      <ul class="nav__links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="work.html">work</a></li>
+        <li><a href="writing.html" aria-current="page">writing</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" style="padding-bottom:1rem">
+    <div class="wrap">
+      <p class="eyebrow">Fiction</p>
+      <h1>The <em>writing</em>.</h1>
+      <p class="hero__lede">Long-form fiction. My current work is the novel below.</p>
+    </div>
+  </header>
+
+  <section class="section" style="border-top:none">
+    <div class="wrap">
+      <div class="grid">
+        <article class="card reveal" style="grid-column: 1 / -1">
+          <span class="card__tag">Novel</span>
+          <h3 class="card__title">The Gentle Conquest</h3>
+          <p class="card__desc">A full-length novel — prologue through epilogue, 36 sections. <span style="color:var(--ember)">[Add a one-line logline here: the hook that makes someone want to read it.]</span></p>
+          <div class="card__links">
+            <a href="https://github.com/Mattjhagen/the-gentle-conquest" target="_blank" rel="noopener">Manuscript repo →</a>
+          </div>
+          <p class="card__note">// Status: in preparation for publishing. Add a purchase / Amazon link here once the book is live.</p>
+        </article>
+      </div>
+
+      <div class="prose reveal" style="margin-top:3rem">
+        <h3>About the book</h3>
+        <p class="muted">Replace this with a short, spoiler-free description of <em>The Gentle Conquest</em> — genre, setting, the central tension, and the feeling a reader walks away with. Two or three paragraphs is plenty.</p>
+        <p class="muted">When the ebook is published, link it here and on the card above. Until then, this section reads as "coming soon," which is accurate.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>© <span id="yr"></span> Matt Hagen</span>
+      <span>github.com/Mattjhagen</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

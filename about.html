@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Matt Hagen</title>
+  <meta name="description" content="About Matt Hagen — developer and writer — and how to get in touch." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html">matt<span>.</span>hagen</a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false">≡</button>
+      <ul class="nav__links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="work.html">work</a></li>
+        <li><a href="writing.html">writing</a></li>
+        <li><a href="about.html" aria-current="page">about</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" style="padding-bottom:1rem">
+    <div class="wrap">
+      <p class="eyebrow">About</p>
+      <h1>Hello, I'm <em>Matt</em>.</h1>
+    </div>
+  </header>
+
+  <section class="section" style="border-top:none">
+    <div class="wrap">
+      <div class="prose reveal">
+        <p class="muted">[Write 2–3 short paragraphs in your own voice. Who you are, what you build, what you write, and what connects the two. This is placeholder text — I haven't invented a bio for you, since it should be true.]</p>
+        <p class="muted">A good structure: (1) what you do now, (2) how you got here, (3) what you're looking for or excited about.</p>
+
+        <h3>Tools &amp; interests</h3>
+        <div class="stack">
+          <span class="chip">// edit these</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Python</span>
+          <span class="chip">Fiction</span>
+          <span class="chip">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="section__num">→</span>
+        <h2 class="section__title">Get in touch</h2>
+      </div>
+      <p class="hero__lede">The links below are live where I know them. Add your email and any social profiles you want public.</p>
+      <div class="contact__links">
+        <a class="btn btn--primary" href="mailto:you@example.com">Email me</a>
+        <a class="btn" href="https://github.com/Mattjhagen" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="#">LinkedIn</a>
+      </div>
+      <p class="card__note" style="margin-top:1.5rem">// TODO: set the mailto address and replace the LinkedIn placeholder (or remove it).</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>© <span id="yr"></span> Matt Hagen</span>
+      <span>github.com/Mattjhagen</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>
