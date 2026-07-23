@@ -1,29 +1,29 @@
 # mattjhagen-portfolio
 
-A dark, techy, multi-page static portfolio for Matt Hagen — software work and fiction in one place. No build step, no framework. Just open `index.html`.
+The résumé + portfolio site for Matt Hagen — live at [mattjhagen.xyz](https://mattjhagen.xyz). Software work, a résumé built from 255 public repos, and fiction in one place. No build step, no framework. Just open `index.html`.
 
 ## Structure
 
 ```
 mattjhagen-portfolio/
-├── index.html      # home + typed-terminal hero
-├── work.html       # software projects
-├── writing.html    # fiction (The Gentle Conquest)
+├── index.html      # home — typed-terminal hero, featured builds, stats
+├── resume.html     # résumé — experience, skills, GitHub stats (print-friendly)
+├── work.html       # software projects (P3, Archon IDE, Idswyft, and more)
+├── writing.html    # fiction — The Gentle Conquest
 ├── about.html      # bio + contact
-├── css/style.css   # all styles
-├── js/main.js      # nav toggle, terminal typing, scroll reveal
-└── assets/         # (drop images / favicon here)
+├── css/style.css   # all styles, incl. print stylesheet for the résumé
+└── js/main.js      # nav toggle, terminal typing, scroll reveal
 ```
 
-## Before it's "done" — placeholders to fill
+## Featured content
 
-Search the files for `TODO`, `// edit`, and bracketed `[...]` notes:
+- **P3 Lending Protocol** — decentralized P2P lending with AI reputation scoring
+- **Archon IDE** — local-first AI coding assistant in Rust + React
+- **Idswyft** — open-source identity verification platform
+- **Mesh Messenger, TapCard, Rooted Daily, PacMac Mobile** — and ~250 more repos
+- **The Gentle Conquest** — psychological thriller, in production
 
-- **work.html** — replace the three placeholder project cards with real repos/demos.
-- **writing.html** — add a logline + description for *The Gentle Conquest*; add the Amazon/purchase link once published.
-- **about.html** — write your real bio; set the `mailto:` address; fix or remove the LinkedIn link.
-
-Nothing about you was invented — bios, project details, and publication status are left blank on purpose.
+The résumé page (`resume.html`) has a Print/PDF button and a dedicated print stylesheet, so it doubles as a paper résumé.
 
 ## Run locally
 
@@ -36,4 +36,4 @@ python3 -m http.server 8000
 
 ## Deploy
 
-Works as-is on GitHub Pages: push to `main`, then enable Pages (Settings → Pages → deploy from `main` / root). Also works on Netlify, Vercel, or Cloudflare Pages with zero config.
+Deployed on GitHub Pages from `main` with the custom domain in `CNAME` (mattjhagen.xyz). Also works on Netlify, Vercel, or Cloudflare Pages with zero config.
