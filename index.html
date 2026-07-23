@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matt Hagen — Developer & Writer</title>
-  <meta name="description" content="Matt Hagen builds software and writes fiction. Projects, code, and books in one place." />
+  <title>Matt Hagen — Founder, Developer & Writer</title>
+  <meta name="description" content="Matt Hagen — founder of P3 Labs and PacMac Mobile, full-stack developer with 255 public repos, and author. Omaha, Nebraska." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A0E14'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' fill='%23FFB000' text-anchor='middle'%3Emh%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <nav class="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="index.html">matt<span>.</span>hagen</a>
+      <a class="nav__brand" href="index.html">matt@hagen<span>:~$</span></a>
       <button class="nav__toggle" aria-label="Menu" aria-expanded="false">≡</button>
       <ul class="nav__links">
         <li><a href="index.html" aria-current="page">home</a></li>
+        <li><a href="resume.html">resume</a></li>
         <li><a href="work.html">work</a></li>
         <li><a href="writing.html">writing</a></li>
         <li><a href="about.html">about</a></li>
@@ -26,22 +28,24 @@
 
   <header class="hero">
     <div class="wrap">
-      <p class="eyebrow">Developer &amp; Writer</p>
-      <h1>I build <em>software</em> and write <em>stories</em>.</h1>
-      <p class="hero__lede">Two crafts, one habit of mind: take something tangled, find its structure, and make it clear. Here's the code and the prose.</p>
+      <p class="eyebrow">Founder · Developer · Writer</p>
+      <h1>I build <em>products</em> and write <em>stories</em>.</h1>
+      <p class="hero__lede">I turn ambitious ideas into working products — designing the experience, building the systems behind it, and explaining the thinking clearly. My work spans fintech, AI, privacy, and developer tools.</p>
 
       <div class="terminal">
         <div class="terminal__bar">
           <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
-          <span class="terminal__title">matt@hagen: ~/portfolio</span>
+          <span class="terminal__title">root@mattjhagen: ~/portfolio</span>
         </div>
         <div class="terminal__body" data-typed='[
           "<span class=&quot;terminal__prompt&quot;>$</span> whoami",
-          "<span class=&quot;s&quot;>matt hagen</span> <span class=&quot;c&quot;>— developer, author</span>",
-          "<span class=&quot;terminal__prompt&quot;>$</span> ls ./disciplines",
-          "<span class=&quot;k&quot;>software/</span>   <span class=&quot;k&quot;>fiction/</span>",
+          "<span class=&quot;s&quot;>matt hagen</span> <span class=&quot;c&quot;>— founder · full-stack dev · author</span>",
+          "<span class=&quot;terminal__prompt&quot;>$</span> cat ~/.location",
+          "<span class=&quot;k&quot;>Omaha, Nebraska, USA</span>",
+          "<span class=&quot;terminal__prompt&quot;>$</span> gh repo list --json name | jq length",
+          "<span class=&quot;s&quot;>255</span>",
           "<span class=&quot;terminal__prompt&quot;>$</span> cat status.txt",
-          "<span class=&quot;c&quot;>// building things, shipping words</span><span class=&quot;cursor&quot;></span>"
+          "<span class=&quot;c&quot;>// credit based on character, not history</span><span class=&quot;cursor&quot;></span>"
         ]'>
         </div>
       </div>
@@ -52,19 +56,74 @@
     <div class="wrap">
       <div class="section__head">
         <span class="section__num">01</span>
+        <h2 class="section__title">Featured builds</h2>
+      </div>
+      <div class="grid">
+        <article class="card reveal">
+          <span class="card__tag">Fintech · Full-stack platform</span>
+          <h3 class="card__title">P³ Lending</h3>
+          <p class="card__desc">A peer-to-peer lending platform that helps people build financial trust through real repayment history — built end to end, from identity and payments to reputation scoring and blockchain-backed verification.</p>
+          <div class="card__links">
+            <a href="https://p3lending.space" target="_blank" rel="noopener">Live →</a>
+            <a href="https://github.com/Mattjhagen/P3-Lending" target="_blank" rel="noopener">Source →</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <span class="card__tag">AI · Developer tool</span>
+          <h3 class="card__title">ResumAI</h3>
+          <p class="card__desc">Upload a résumé, receive a website — an AI pipeline that extracts, structures, and publishes a personal portfolio with its own theme and subdomain.</p>
+          <div class="card__links">
+            <a href="https://github.com/Mattjhagen/ResumAI" target="_blank" rel="noopener">Source →</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <span class="card__tag">Social platform · Privacy</span>
+          <h3 class="card__title">OpenTok</h3>
+          <p class="card__desc">A privacy-first short-form video platform — donations, not data. A community-funded alternative to surveillance-based social media.</p>
+          <div class="card__links">
+            <a href="https://github.com/Mattjhagen/opentok" target="_blank" rel="noopener">Source →</a>
+          </div>
+        </article>
+      </div>
+      <div class="contact__links" style="margin-top:2rem">
+        <a class="btn" href="work.html">All work →</a>
+        <a class="btn btn--primary" href="resume.html">View résumé →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <h2 class="section__title">By the numbers</h2>
+      </div>
+      <div class="stats reveal">
+        <div class="stat"><div class="stat__num">255</div><div class="stat__label">public repositories</div></div>
+        <div class="stat"><div class="stat__num">2</div><div class="stat__label">companies founded</div></div>
+        <div class="stat"><div class="stat__num">9+</div><div class="stat__label">languages shipped in</div></div>
+        <div class="stat"><div class="stat__num">1</div><div class="stat__label">novel in production</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="section__num">03</span>
         <h2 class="section__title">Two tracks</h2>
       </div>
       <div class="grid">
         <article class="card reveal">
           <span class="card__tag">Software</span>
           <h3 class="card__title">Code &amp; projects</h3>
-          <p class="card__desc">Web apps, tools, and experiments. Built to work, documented to last.</p>
+          <p class="card__desc">Full-stack products across fintech, AI, privacy, and developer tooling — from early architecture through production deployment.</p>
           <div class="card__links"><a href="work.html">View work →</a></div>
         </article>
         <article class="card reveal">
           <span class="card__tag">Fiction</span>
           <h3 class="card__title">Books &amp; writing</h3>
-          <p class="card__desc">Long-form fiction, including the novel <em>The Gentle Conquest</em>.</p>
+          <p class="card__desc">Long-form fiction, including the psychological thriller <em>The Gentle Conquest</em>.</p>
           <div class="card__links"><a href="writing.html">Read more →</a></div>
         </article>
         <article class="card reveal">
@@ -80,18 +139,14 @@
   <section class="section">
     <div class="wrap">
       <div class="section__head">
-        <span class="section__num">02</span>
+        <span class="section__num">04</span>
         <h2 class="section__title">Latest</h2>
       </div>
-      <div class="embed reveal">
-        <iframe
-          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmattjhagen%2Fposts%2Fpfbid0HY1smfkk3E8z1JtXRfQmPJXnBEuAin6bahsJJYeEtLzz42VvgiUA89y1DzCPgphwl&show_text=true&width=500"
-          width="500" height="570"
-          style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-          allowfullscreen="true"
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          title="Facebook post by Matt Hagen"
-          loading="lazy"></iframe>
+      <div class="prose reveal">
+        <p>Currently building <a href="https://p3lending.space" target="_blank" rel="noopener">P³ Lending</a>, a reputation-driven peer-to-peer lending platform, while continuing to experiment with AI developer tools and privacy-first software.</p>
+        <div class="contact__links">
+          <a class="btn" href="work.html">See what I'm building →</a>
+        </div>
       </div>
     </div>
   </section>
